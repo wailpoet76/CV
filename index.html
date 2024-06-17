@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width" , initial-scale=1.6>
+  <title>My CV</title>
+  <!-- Render All Elements Normally -->
+  <link rel="stylesheet" href="Style/normalize.css">
+  <!-- Awsome -->
+  <link rel="stylesheet" href="Style/font-awesome.min.css">
+  <link rel="stylesheet" href="Style/all.min.css">
+  <!-- CV style file -->
+  <link href="Style/CV.css" rel="stylesheet" type="text/css" />
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap">
+</head>
+<script src="https://kit.fontawesome.com/b055496efa.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="project">
+
+    <div id="top"></div>
+    <!-- START Setting SideBar  -->
+    <div class="choice-box">
+      <div class="toggle">
+        <i class="fa fa-gear"></i>
+      </div>
+      <div class="choice-container">
+        <div class="image">
+          <img src="imgs/Mine.jpg" alt="">
+        </div>
+        <div class="colors option-box">
+          <h4>Color Palette</h4>
+          <ul class="colors-list">
+            <li class="active" data-color="#FF9800"></li>
+            <li data-color="#E91E63"></li>
+            <li data-color="#009688"></li>
+            <li data-color="#03A9F4"></li>
+            <li data-color="#4CAF50"></li>
+          </ul>
+        </div>
+        <div class="option-box">
+          <h4>Random Backgrounds</h4>
+          <div class="random-backgrounds">
+            <span class="yes " data-background="show">Yes</span>
+            <span class="no" data-background="hide">No</span>
+
+          </div>
+        </div>
+        <div class="option-box mode">
+          <h4>Site Style Mode</h4>
+          <div class="style-option">
+            <span class="dark active" data-display="show">Light</span>
+            <span class="radio">
+              <label>
+                <input type="checkbox" class="toggle-checkbox" name="" id="" checked hidden>
+                <div class="toggle-switch"></div>
+              </label>
+            </span>
+            <span class="light" data-display="hide">Dark</span>
+          </div>
+        </div>
+        <button class="reset-options">Reset Options</button>
+      </div>
+    </div>
+    <!-- END Setting SideBar  -->
+    <!-- START Landding Page -->
+    <div class="overlay"></div>
+    <header class="menu">
+      <div class="logo">Lion <span><img src="imgs/Logo.png" alt="" width="30px"></span>Coder</div>
+      <div class="menu_items">
+        <span class="menuIcon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#timeline">Timeline</a></li>
+          <li><a href="#artieducationcles">Education</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- main drawing div-->
+    <div class="Header">
+    </div>
+    <div class="intro_text">
+      <h1>I'm a <span> Creative </span>Frontend Developer</h1>
+      <p>I design responsive web pages using HTML5, Css and Javascript </p>
+    </div>
+    <div class="top">
+      <a href="#top" class="gotop">
+        <i class="fas fa-angle-double-up fa-2x"></i>
+      </a>
+    </div>
+
+    <!-- END Landding Page -->
+    <div class="container">
+      <div class="about" id="about">
+        <h2>About Me</h2>
+        <div class="details">
+          <div class="image">
+            <div class="blob">
+              <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="100%" id="blobSvg">
+                <defs>
+                  <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:var(--main-color);"></stop>
+                    <stop offset="100%" style="stop-color: #ef629f;"></stop>
+                  </linearGradient>
+                </defs>
+
+                <path id="blob" d="" fill="url(#gradient)">
+                  <animate attributeName="d" dur="5000ms" repeatCount="indefinite"
+                    values="
+
+
+                M443.5,305.5Q422,361,377.5,396.5Q333,432,277.5,437.5Q222,443,175.5,416.5Q129,390,97.5,347Q66,304,54,246.5Q42,189,64.5,125.5Q87,62,152,42.5Q217,23,274,48Q331,73,365.5,113.5Q400,154,432.5,202Q465,250,443.5,305.5Z;
+
+                M424.5,298.5Q401,347,377,411Q353,475,284.5,481Q216,487,154.5,459Q93,431,84,366Q75,301,52,243Q29,185,58,123.5Q87,62,155,62.5Q223,63,281,59Q339,55,368.5,105Q398,155,423,202.5Q448,250,424.5,298.5Z;
+
+                M464,308Q431,366,389,414.5Q347,463,285.5,448Q224,433,160,430.5Q96,428,56.5,373Q17,318,48,259Q79,200,103.5,154.5Q128,109,173.5,73Q219,37,271,63.5Q323,90,376,112.5Q429,135,463,192.5Q497,250,464,308Z;
+
+                M457,313Q446,376,396.5,419Q347,462,282.5,466Q218,470,154.5,452Q91,434,60,374.5Q29,315,39.5,253Q50,191,87,148Q124,105,174.5,89.5Q225,74,287,53.5Q349,33,390,83.5Q431,134,449.5,192Q468,250,457,313Z;
+
+                M443.5,305.5Q422,361,377.5,396.5Q333,432,277.5,437.5Q222,443,175.5,416.5Q129,390,97.5,347Q66,304,54,246.5Q42,189,64.5,125.5Q87,62,152,42.5Q217,23,274,48Q331,73,365.5,113.5Q400,154,432.5,202Q465,250,443.5,305.5Z;">
+
+                  </animate>
+                </path>
+
+              </svg>
+            </div>
+            <div class="blob">
+              <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="100%" id="blobSvg">
+                <defs>
+                  <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:var(--main-color);"></stop>
+                    <stop offset="100%" style="stop-color: #ef629f;"></stop>
+                  </linearGradient>
+                </defs>
+                <path id="blob" d="" fill="url(#gradient)">
+                  <animate attributeName="d" dur="5000ms" repeatCount="indefinite"
+                    values="
+
+
+                M443.5,305.5Q422,361,377.5,396.5Q333,432,277.5,437.5Q222,443,175.5,416.5Q129,390,97.5,347Q66,304,54,246.5Q42,189,64.5,125.5Q87,62,152,42.5Q217,23,274,48Q331,73,365.5,113.5Q400,154,432.5,202Q465,250,443.5,305.5Z;
+
+                M424.5,298.5Q401,347,377,411Q353,475,284.5,481Q216,487,154.5,459Q93,431,84,366Q75,301,52,243Q29,185,58,123.5Q87,62,155,62.5Q223,63,281,59Q339,55,368.5,105Q398,155,423,202.5Q448,250,424.5,298.5Z;
+
+                M464,308Q431,366,389,414.5Q347,463,285.5,448Q224,433,160,430.5Q96,428,56.5,373Q17,318,48,259Q79,200,103.5,154.5Q128,109,173.5,73Q219,37,271,63.5Q323,90,376,112.5Q429,135,463,192.5Q497,250,464,308Z;
+
+                M457,313Q446,376,396.5,419Q347,462,282.5,466Q218,470,154.5,452Q91,434,60,374.5Q29,315,39.5,253Q50,191,87,148Q124,105,174.5,89.5Q225,74,287,53.5Q349,33,390,83.5Q431,134,449.5,192Q468,250,457,313Z;
+
+                M443.5,305.5Q422,361,377.5,396.5Q333,432,277.5,437.5Q222,443,175.5,416.5Q129,390,97.5,347Q66,304,54,246.5Q42,189,64.5,125.5Q87,62,152,42.5Q217,23,274,48Q331,73,365.5,113.5Q400,154,432.5,202Q465,250,443.5,305.5Z;">
+
+                  </animate>
+                </path>
+
+              </svg>
+            </div>
+            <div class="blob">
+              <svg viewBox="00 00 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="70%" id="blobSvg">
+                <defs>
+                  <clipPath id="shape">
+                    <path id="blob" d="" fill="#d1d8e0">
+                      <animate attributeName="d" dur="5000ms" repeatCount="indefinite"
+                        values="
+
+
+                                  M443.5,305.5Q422,361,377.5,396.5Q333,432,277.5,437.5Q222,443,175.5,416.5Q129,390,97.5,347Q66,304,54,246.5Q42,189,64.5,125.5Q87,62,152,42.5Q217,23,274,48Q331,73,365.5,113.5Q400,154,432.5,202Q465,250,443.5,305.5Z;
+
+                                  M464,308Q431,366,389,414.5Q347,463,285.5,448Q224,433,160,430.5Q96,428,56.5,373Q17,318,48,259Q79,200,103.5,154.5Q128,109,173.5,73Q219,37,271,63.5Q323,90,376,112.5Q429,135,463,192.5Q497,250,464,308Z;
+
+                                  M457,313Q446,376,396.5,419Q347,462,282.5,466Q218,470,154.5,452Q91,434,60,374.5Q29,315,39.5,253Q50,191,87,148Q124,105,174.5,89.5Q225,74,287,53.5Q349,33,390,83.5Q431,134,449.5,192Q468,250,457,313Z;
+
+                                  M424.5,298.5Q401,347,377,411Q353,475,284.5,481Q216,487,154.5,459Q93,431,84,366Q75,301,52,243Q29,185,58,123.5Q87,62,155,62.5Q223,63,281,59Q339,55,368.5,105Q398,155,423,202.5Q448,250,424.5,298.5Z;
+
+                                  M443.5,305.5Q422,361,377.5,396.5Q333,432,277.5,437.5Q222,443,175.5,416.5Q129,390,97.5,347Q66,304,54,246.5Q42,189,64.5,125.5Q87,62,152,42.5Q217,23,274,48Q331,73,365.5,113.5Q400,154,432.5,202Q465,250,443.5,305.5Z;">
+
+                      </animate>
+                    </path>
+                  </clipPath>
+                </defs>
+                <image x="0" y="0" width="100%" height="100%" clip-path="url(#shape)" xlink:href="imgs/about-me.png"
+                  preserveAspectRatio="none">
+                </image>
+              </svg>
+            </div>
+          </div>
+          <div class="basic_inf">
+            <p>I am <span>Walid Bakr</span>, a passionate freelancer from <span>Alexandria</span>, <span>Egypt</span> ,
+              bringing you fine responsive web development and design from scratch. My expertise is developing
+              next-level
+              websites and web
+              applications including full frontend design.and i'm a good programmer.</p>
+            <p>Work with groups and I've concidered a <span>persistent</span> person and <span>fast</span> learner, good
+              <span>seeker</span> for information and learn fast
+            </p>
+            <div><i class="fa-solid fa-envelope fa-regular fa-beat"></i>
+              &emsp;wailpoet76@gmail.com
+            </div><br>
+            <!-- <i class="fa-solid fa-circle-plus fa-beat"></i> -->
+            <!-- <i class="fa-solid fa-heart fa-beat"></i> -->
+            <!-- <i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s;"></i> -->
+            <!-- <i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 2s;"></i> -->
+            <!-- <i class="fa-solid fa-heart fa-beat" style="--fa-beat-scale: 2.0;"></i> -->
+            <div><i class="fa fa-2x fa-fw fa-whatsapp fa-shake"></i>
+              +20 111 288 0780
+            </div><br>
+            <!-- <div><i class="fas fa-2x fa-mobile fa-shake"></i>
+            &emsp;+20 111 288 0780
+          </div><br> -->
+            <div><i class="fa-solid fa-location-dot fa-bounce"></i>&emsp;&emsp;Alex, Egypt</div><br>
+            <div><i class="fa-solid fa-cake-candles fa-fade"
+                style="--fa-fade-scale: 2.0;--fa-animation-duration: 2s;"></i>
+              &emsp;&emsp;04<sup>th</sup> of october 1976</div><br>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="skills" id="skills">
+        <h2>Skills</h2>
+        <div class="front">
+          <div class="icon HTML">
+            <img src="imgs/icon-html5.png" alt="">
+            <div class="skillBar">
+              <div class="outer">
+                <div class="inner">
+                  <div id="number">
+
+                  </div>
+                </div>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="160px"
+                height="160px" id="circle">
+                <defs>
+                  <linearGradient id="gradient">
+                    <stop offset="0%" style="stop-color: #ff0000;"></stop>
+                    <stop offset="100%" style="stop-color:var(--main-color);"></stop>
+                  </linearGradient>
+                </defs>
+                <circle cx="80" cy="80" r="70">
+              </svg>
+            </div>
+            <h4>HTML</h4>
+          </div>
+          <div class="icon CSS">
+            <img src="imgs/icon-css.png" alt="">
+            <div class="skillBar">
+              <div class="outer">
+                <div class="inner">
+                  <div id="number">
+
+                  </div>
+                </div>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="160px"
+                height="160px" id="circle">
+                <defs>
+                  <linearGradient id="gradient">
+                    <stop offset="0%" style="stop-color: #ff0000;"></stop>
+                    <stop offset="100%" style="stop-color:var(--main-color);"></stop>
+                  </linearGradient>
+                </defs>
+                <circle cx="80" cy="80" r="70">
+              </svg>
+            </div>
+            <h4>CSS</h4>
+          </div>
+          <div class="icon JS">
+            <img src="imgs/icon-javascript.png" alt="">
+            <div class="skillBar">
+              <div class="outer">
+                <div class="inner">
+                  <div id="number">
+
+                  </div>
+                </div>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="160px"
+                height="160px" id="circle">
+                <defs>
+                  <linearGradient id="gradient">
+                    <stop offset="0%" style="stop-color: #ff0000;"></stop>
+                    <stop offset="100%" style="stop-color:var(--main-color);"></stop>
+                  </linearGradient>
+                </defs>
+                <circle cx="80" cy="80" r="70">
+              </svg>
+            </div>
+            <h4>JavaScript</h4>
+          </div>
+          <div class="icon GIT">
+            <img src="imgs/icon-git.png" alt="">
+            <div class="skillBar">
+              <div class="outer">
+                <div class="inner">
+                  <div id="number">
+
+                  </div>
+                </div>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="160px"
+                height="160px" id="circle">
+                <defs>
+                  <linearGradient id="gradient">
+                    <stop offset="0%" style="stop-color: #ff0000;"></stop>
+                    <stop offset="100%" style="stop-color:var(--main-color);"></stop>
+                  </linearGradient>
+                </defs>
+                <circle cx="80" cy="80" r="70">
+              </svg>
+            </div>
+            <h4>Git Hub</h4>
+          </div>
+        </div>
+        <div class="back">
+          <div class="icon C">
+            <img src="imgs/icon-C.png" alt="">
+            <div class="skillBar">
+              <div class="outer">
+                <div class="inner">
+                  <div id="number">
+
+                  </div>
+                </div>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="160px"
+                height="160px" id="circle">
+                <defs>
+                  <linearGradient id="gradient">
+                    <stop offset="0%" style="stop-color: #ff0000;"></stop>
+                    <stop offset="100%" style="stop-color:var(--main-color);"></stop>
+                  </linearGradient>
+                </defs>
+                <circle cx="80" cy="80" r="70">
+              </svg>
+            </div>
+            <h4>C</h4>
+          </div>
+          <div class="icon CSHARP">
+            <img src="imgs/icon-csharp.png" alt="">
+            <div class="skillBar">
+              <div class="outer">
+                <div class="inner">
+                  <div id="number">
+
+                  </div>
+                </div>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="160px"
+                height="160px" id="circle">
+                <defs>
+                  <linearGradient id="gradient">
+                    <stop offset="0%" style="stop-color: #ff0000;"></stop>
+                    <stop offset="100%" style="stop-color:var(--main-color);"></stop>
+                  </linearGradient>
+                </defs>
+                <circle cx="80" cy="80" r="70">
+              </svg>
+            </div>
+            <h4>C#</h4>
+          </div>
+          <div class="icon CPP">
+            <img src="imgs/icon-cpp.png" alt="">
+            <div class="skillBar">
+              <div class="outer">
+                <div class="inner">
+                  <div id="number">
+
+                  </div>
+                </div>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="160px"
+                height="160px" id="circle">
+                <defs>
+                  <linearGradient id="gradient">
+                    <stop offset="0%" style="stop-color: #ff0000;"></stop>
+                    <stop offset="100%" style="stop-color:var(--main-color);"></stop>
+                  </linearGradient>
+                </defs>
+                <circle cx="80" cy="80" r="70">
+              </svg>
+            </div>
+            <h4>C++</h4>
+          </div>
+          <div class="icon PHP">
+            <img src="imgs/icon-php.png" alt="">
+            <div class="skillBar">
+              <div class="outer">
+                <div class="inner">
+                  <div id="number">
+
+                  </div>
+                </div>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="160px"
+                height="160px" id="circle">
+                <defs>
+                  <linearGradient id="gradient">
+                    <stop offset="0%" style="stop-color: #ff0000;"></stop>
+                    <stop offset="100%" style="stop-color:var(--main-color);"></stop>
+                  </linearGradient>
+                </defs>
+                <circle cx="80" cy="80" r="70">
+              </svg>
+            </div>
+            <h4>PHP</h4>
+          </div>
+          <div class="icon MYSQL">
+            <img src="imgs/icon-MYSQL.png" alt="">
+            <div class="skillBar">
+              <div class="outer">
+                <div class="inner">
+                  <div id="number">
+
+                  </div>
+                </div>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="160px"
+                height="160px" id="circle">
+                <defs>
+                  <linearGradient id="gradient">
+                    <stop offset="0%" style="stop-color: #ff0000;"></stop>
+                    <stop offset="100%" style="stop-color:var(--main-color);"></stop>
+                  </linearGradient>
+                </defs>
+                <circle cx="80" cy="80" r="70">
+              </svg>
+            </div>
+            <h4>My SQL</h4>
+          </div>
+        </div>
+
+        <h2>EXPERIENCE</h2>
+
+        <div>
+          <h3>Experience 1</h3>
+          <h3 class="light">Workplace</h3>
+          <p class="date"> 2018</p>
+        </div>
+        <div>
+          <h3>Experience 2</h3>
+          <h3 class="light">Workplace</h3>
+          <p class="date"> 2019</p>
+        </div>
+
+      </div>
+    </div>
+    <div class="footer">
+      <p>Here is the end of the website</p>
+    </div>
+  </div>
+  <script src="script/CV.js"></script>
+</body>
+
+</html>
