@@ -283,7 +283,7 @@ left.addEventListener("click", function () {
 right.addEventListener("click", function () {
     var mover = slider.offsetLeft;
     if ((slider.offsetLeft + width) > width - 200) {
-        slider.style.left = 20 + "px";
+        slider.style.left = 0 + "px";
         return false;
     }
     slider.style.left = mover + 300 + "px";

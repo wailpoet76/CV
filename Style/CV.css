@@ -800,9 +800,9 @@ div.container>div.skills div.icon>div.skillBar>svg {
   flex-wrap: nowrap;
   overflow: hidden;
   align-items: center;
-  padding: 0px 20px;
+  padding: 0px 0px;
   position: relative;
-  left: 20px;
+  left: 0px;
   /* background-color: #a7a7a7; */
 }
 
@@ -811,9 +811,9 @@ div.container>div.skills div.icon>div.skillBar>svg {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  padding: 0px 20px;
+  padding: 0px 0px;
   position: absolute;
-  left: 20px;
+  left: -10px;
   transition: var(--long-delay);
   -webkit-transition: var(--long-delay);
   -moz-transition: var(--long-delay);
@@ -822,8 +822,8 @@ div.container>div.skills div.icon>div.skillBar>svg {
 }
 
 .slider .projectItem {
-  /* width: 200px; */
-  height: 210px;
+  /*width: 200px;
+  */height: 210px;
   background-color: var(--style-box-color);
   display: flex;
   justify-content: center;
@@ -838,8 +838,6 @@ div.container>div.skills div.icon>div.skillBar>svg {
   -moz-transition: var(--long-delay);
   -ms-transition: var(--long-delay);
   -o-transition: var(--long-delay);
-
-
 }
 
 .slider .projectItem:hover {
