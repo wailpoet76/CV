@@ -739,7 +739,8 @@ div.container>div.skills div.icon>div.skillBar>svg {
 /* ******************************************************** */
 /* ******************************************************** */
 .gallery {
-  background-color: red;
+  width: 100%;
+  height: 400px;
   position: relative;
 }
 
