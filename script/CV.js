@@ -247,7 +247,6 @@ skillItem.forEach(ele => {
         skillStart = 0;
         document.documentElement.style.setProperty('--anim-value', progBar);
         var skillCounter = skillCounterName[`${skillCounterItem}`].value;
-        console.log("Here");
         x[skillCounterName[`${skillCounterItem}`].interval] = setInterval(() => {
             if (skillStart == skillCounter) {
                 clearInterval(x[skillCounterName[`${skillCounterItem}`].interval]);
@@ -261,6 +260,57 @@ skillItem.forEach(ele => {
         skillStart = 0;
         setNumber.textContent = `${skillStart}%`;
     });
+});
+
+
+
+//************************************* */
+//*********  Project Move       ******* */
+//************************************* */
+const slider = document.querySelector(".slider");
+const sliderFrame = document.querySelector(".sliderFrame");
+const left = document.querySelector(".scroller.left");
+const right = document.querySelector(".scroller.right");
+var widthFrame = sliderFrame.offsetWidth;
+var width = slider.offsetWidth;
+left.addEventListener("click", function () {
+    var mover = slider.offsetLeft;
+    if ((slider.offsetLeft + width) < widthFrame) {
+        return false;
+    }
+    slider.style.left = mover - 300 + "px";
+});
+right.addEventListener("click", function () {
+    var mover = slider.offsetLeft;
+    if ((slider.offsetLeft + width) > width - 200) {
+        slider.style.left = 20 + "px";
+        return false;
+    }
+    slider.style.left = mover + 300 + "px";
+});
+
+
+//************************************* */
+//*********  Project click      ******* */
+//************************************* */
+
+var project = document.querySelectorAll(".projectItem");
+var option = ["https://wailpoet76.github.io/Login/",
+    "https://wailpoet76.github.io/Gammal-Tech/",
+    "https://wailpoet76.github.io/Gammal-Tech-Linear/",
+    "https://wailpoet76.github.io/HTML_CSS_Template_4/",
+    "https://wailpoet76.github.io/HTML_CSS_Template_3/",
+    "https://wailpoet76.github.io/HTML_CSS_Template_1/",
+    "https://wailpoet76.github.io/HTML_CSS_Template_2/",
+    "https://wailpoet76.github.io/Drum/",
+    "https://wailpoet76.github.io/Clock/",
+    "https://wailpoet76.github.io/Bubbles/"
+];
+project.forEach(ele => {
+    ele.addEventListener('click', () => {
+        console.log(ele.dataset.number);
+        window.open(option[ele.dataset.number], "_blank");
+    })
 });
 
 //
