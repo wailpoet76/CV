@@ -411,7 +411,8 @@ header.menu>div.menu_items>span.menuIcon:hover {
 
 header.menu>div.menu_items>span.menuIcon>span {
   width: 70%;
-  height: 3px;
+  height: 4px;
+  border-radius: 3px;
   background-color: var(--main-color);
   margin: 2px;
   transition: var(--long-delay);
@@ -420,22 +421,43 @@ header.menu>div.menu_items>span.menuIcon>span {
   -ms-transition: var(--long-delay);
   -o-transition: var(--long-delay);
   transform-origin: center;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  position: relative;
 }
 
-header.menu>div.menu_items>span.menuIcon:hover span:first-child {
-  transform: rotateZ(750deg)translate(3px, 6px) scaleX(1.2);
-  -webkit-transform: rotateZ(750deg)translate(3px, 6px) scaleX(1.2);
-  -moz-transform: rotateZ(750deg)translate(3px, 6px) scaleX(1.2);
-  -ms-transform: rotateZ(750deg)translate(3px, 6px) scaleX(1.2);
-  -o-transform: rotateZ(750deg)translate(3px, 6px) scaleX(1.2);
+header.menu>div.menu_items>span.menuIcon>span::before {
+  content: '';
+  position: absolute;
+  width: 20%;
+  height: 2px;
+  left: 2px;
+  top: 1px;
+  background-color: #a1a4a5;
+  background-color: #fff;
 }
 
-header.menu>div.menu_items>span.menuIcon:hover span:last-child {
-  transform: rotateZ(-750deg)translate(3px, -6px) scaleX(1.2);
-  -webkit-transform: rotateZ(-750deg)translate(3px, -6px) scaleX(1.2);
-  -moz-transform: rotateZ(-750deg)translate(3px, -6px) scaleX(1.2);
-  -ms-transform: rotateZ(-750deg)translate(3px, -6px) scaleX(1.2);
-  -o-transform: rotateZ(-750deg)translate(3px, -6px) scaleX(1.2);
+header.menu>div.menu_items>span.menuIcon.click span:first-child {
+  transform: rotateZ(760deg)translate(6px, 6px) scaleX(1.2);
+  -webkit-transform: rotateZ(760deg)translate(6px, 6px) scaleX(1.2);
+  -moz-transform: rotateZ(760deg)translate(6px, 6px) scaleX(1.2);
+  -ms-transform: rotateZ(760deg)translate(6px, 6px) scaleX(1.2);
+  -o-transform: rotateZ(760deg)translate(6px, 6px) scaleX(1.2);
+  background-color: red;
+}
+
+header.menu>div.menu_items>span.menuIcon.click span:nth-child(2) {
+  opacity: 0;
+}
+
+header.menu>div.menu_items>span.menuIcon.click span:last-child {
+  transform: rotateZ(-580deg)translate(-6px, 5px) scaleX(1.2);
+  -webkit-transform: rotateZ(-580deg)translate(-6px, 5px) scaleX(1.2);
+  -moz-transform: rotateZ(-580deg)translate(-6px, 5px) scaleX(1.2);
+  -ms-transform: rotateZ(-580deg)translate(-6px, 5px) scaleX(1.2);
+  -o-transform: rotateZ(-580deg)translate(-6px, 5px) scaleX(1.2);
 }
 
 header.menu>div.menu_items ul {
@@ -823,7 +845,8 @@ div.container>div.skills div.icon>div.skillBar>svg {
 
 .slider .projectItem {
   /*width: 200px;
-  */height: 210px;
+  */
+  height: 210px;
   background-color: var(--style-box-color);
   display: flex;
   justify-content: center;
@@ -862,20 +885,216 @@ div.container>div.skills div.icon>div.skillBar>svg {
   padding: 10px;
 }
 
-
+/* ******************************************************** */
+/* *******          Ends Projects                  ******** */
+/* ******************************************************** */
 
 
 
 /* ******************************************************** */
-/* *******          Ends Projects                  ******** */
+/* ******************************************************** */
+/* *******          Starts Timeline                ******** */
+/* ******************************************************** */
+/* ******************************************************** */
+.container .timeline {
+  width: 100%;
+  margin: 10px 10px 50px;
+  padding: 10px;
+  position: relative;
+  height: fit-content;
+}
+
+.container .timeline .contents {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.container .timeline .contents::before {
+  content: '';
+  width: 3px;
+  height: 100%;
+  background-color: var(--style-front-color);
+  position: absolute;
+  left: 50%;
+  /* background-color: yellowgreen; */
+}
+
+.container .timeline .contents .item {
+  background-color: var(--style-front-color);
+  color: var(--style-back-color);
+  padding: 10px 20px;
+  width: fit-content;
+  position: relative;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin: 20px 0px;
+  max-width: 300px;
+}
+
+.container .timeline .contents .item.left {
+  left: 50%;
+  margin-left: 60px;
+}
+
+.container .timeline .contents .item.right {
+  left: 50%;
+  margin-left: -60px;
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+}
+
+.container .timeline .contents .item h5 {
+  color: var(--main-color);
+  background-color: var(--style-back-color);
+  padding: 5px;
+  position: absolute;
+  top: 50%;
+}
+
+.container .timeline .contents .item.left h5 {
+  background-color: var(--style-back-color);
+  left: -60px;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.container .timeline .contents .item.right h5 {
+  background-color: var(--style-back-color);
+  right: -60px;
+  transform: translate(50%, -50%);
+  -webkit-transform: translate(50%, -50%);
+  -moz-transform: translate(50%, -50%);
+  -ms-transform: translate(50%, -50%);
+  -o-transform: translate(50%, -50%);
+}
+
+.container .timeline .contents .item span {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+}
+
+.container .timeline .contents .item.left span {
+  left: -19px;
+  top: 50%;
+  border: 10px solid;
+  border-color: transparent var(--style-front-color) transparent transparent;
+}
+
+.container .timeline .contents .item.right span {
+  right: -19px;
+  top: 50%;
+  border: 10px solid;
+  border-color: transparent transparent transparent var(--style-front-color);
+}
+
+.container .timeline .contents .hider {
+  width: 100%;
+  height: 95%;
+  z-index: 3;
+  position: absolute;
+  bottom: 0;
+  left: zero;
+  background-color: var(--style-back-color);
+
+}
+
+.container .timeline .contents .hider.active {
+  height: 0%;
+  transition: 20s;
+  -webkit-transition: 20s;
+  -moz-transition: 20s;
+  -ms-transition: 20s;
+  -o-transition: 20s;
+}
+
+
+/* ******************************************************** */
+/* *******          Ends Timeline                  ******** */
+/* ******************************************************** */
+
+/* ******************************************************** */
+/* *******          Start CV                       ******** */
+/* ******************************************************** */
+.container .cv input {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  width: 150px;
+  padding: 20px;
+  background-color: var(--style-front-color);
+  color: var(--main-color);
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.container .cv input:hover {
+  cursor: pointer;
+  box-shadow: 3px 3px 30px 10px var(--main-color);
+}
+
+/* ******************************************************** */
+/* *******          Ends CV                        ******** */
+/* ******************************************************** */
+
+
+/* ******************************************************** */
+/* *******          Start Footer                   ******** */
+/* ******************************************************** */
+.footer {
+  margin: 10px;
+  padding: 10px;
+  /* background-color: var(--style-front-color); */
+  color: var(--main-color);
+}
+
+.footer p {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer p span {
+  margin: 0px 10px;
+  cursor: pointer;
+}
+
+.footer p span:hover {
+  text-shadow: 0px 0px 5px var(--style-front-color);
+}
+
+/* ******************************************************** */
+/* *******          Ends Footer                    ******** */
 /* ******************************************************** */
 
 /* ******************************************************** */
 /* *******          End Other Sections             ******** */
 /* ******************************************************** */
-
-
-
 
 
 /* ******************************************************** */
@@ -898,6 +1117,7 @@ div.container>div.skills div.icon>div.skillBar>svg {
 
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 780px) {
+
 
   header.menu {
     position: absolute;
@@ -973,7 +1193,17 @@ div.container>div.skills div.icon>div.skillBar>svg {
     width: 90%;
   }
 
+  .container .timeline .contents::before {
+    left: 90%;
+  }
+
+  .container .timeline .contents .item.right {
+    left: 90%;
+    min-width: 200px;
+    max-width: 200px;
+  }
 }
+
 
 /* ******************************************************** */
 /* *******          End Responsive Page            ******** */

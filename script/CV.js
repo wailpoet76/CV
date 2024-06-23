@@ -39,6 +39,7 @@ let image = document.querySelector('.Header');
 let reset = document.querySelector('.reset-options');
 //header
 const menu = document.querySelector(".menu_items ul");
+const menuLi = document.querySelectorAll(".menu_items ul li");
 const icon = document.querySelector(".menu_items .menuIcon");
 
 //************************************* */
@@ -50,6 +51,7 @@ window.onload = () => {
     } else {
         randImg[1].click();
     }
+    if (document.body.offsetWidth <= 885) resize();
 }
 
 window.onscroll = () => {
@@ -172,8 +174,9 @@ window.addEventListener('resize', function () {
 })
 icon.addEventListener("click", function () {
     this.classList.toggle("active");
+    this.classList.toggle("click");
     menu.style.transformOrigin = 'center top';
-    if (this.classList.contains('active')) {
+    if (this.classList.contains('click')) {
         menu.style.display = "flex";
         menu.style.top = "90px";
         menu.style.transform = 'scale(1)';
@@ -182,6 +185,14 @@ icon.addEventListener("click", function () {
         menu.style.transform = 'scale(0)';
 
     }
+});
+
+menuLi.forEach(ele => {
+
+    ele.addEventListener("click", function () {
+        icon.click();
+    });
+
 });
 
 
@@ -217,7 +228,7 @@ var skillCounterName = {
         delay: 32,
     },
     "CSHARP": {
-        value: 70,
+        value: 60,
         interval: 5,
         delay: 32,
     },
@@ -227,12 +238,12 @@ var skillCounterName = {
         delay: 40,
     },
     "PHP": {
-        value: 60,
+        value: 20,
         interval: 7,
         delay: 30,
     },
     "MYSQL": {
-        value: 10,
+        value: 5,
         interval: 8,
         delay: 30,
     },
@@ -308,10 +319,67 @@ var option = ["https://wailpoet76.github.io/Login/",
 ];
 project.forEach(ele => {
     ele.addEventListener('click', () => {
-        console.log(ele.dataset.number);
         window.open(option[ele.dataset.number], "_blank");
     })
 });
+
+
+//************************************* */
+//*********     TimeLine        ******* */
+//************************************* */
+
+const timelineCnt = document.querySelector(".timeline .contents")
+const timelineCntLeft = document.querySelectorAll(".timeline .contents .item.left")
+window.addEventListener("scroll", () => {
+    const hider = document.documentElement.querySelector(".container .timeline .contents .hider");
+    if (window.scrollY >= 3700) {
+        hider.classList.add("active");
+    }
+    if (window.scrollY < 3400) {
+        hider.classList.remove("active");
+    }
+})
+
+window.addEventListener("resize", resize);
+function resize() {
+    if (document.body.offsetWidth <= 885) {
+        timelineCntLeft.forEach(ele => {
+            ele.classList.remove("left");
+            ele.classList.add("right");
+        });
+    } else if (document.body.offsetWidth > 885) {
+        timelineCntLeft.forEach(ele => {
+            ele.classList.add("left");
+            ele.classList.remove("right");
+        });
+    };
+}
+
+
+//************************************* */
+//*********     CV Click        ******* */
+//************************************* */
+const cv = document.querySelector(".cv")
+cv.onclick = function () {
+    window.open("../Files/MyC.V. as Developer - 2024.pdf", "_blank");
+}
+
+
+//************************************* */
+//*********     Footer          ******* */
+//************************************* */
+const contactMe = document.querySelectorAll(".footer p span")
+contactMe[0].onclick = function () {
+    window.open("https://www.linkedin.com/in/walid-bakr-01a3a1237", "_blank");
+}
+contactMe[1].onclick = function () {
+    window.open("https://wa.me/01004104024", "_blank");
+}
+contactMe[2].onclick = function () {
+    window.open("https://www.facebook.com/walid.bakr.3", "_blank");
+}
+
+
 
 //
 
