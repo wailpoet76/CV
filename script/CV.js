@@ -373,7 +373,7 @@ contactMe[0].onclick = function () {
     window.open("https://www.linkedin.com/in/walid-bakr-01a3a1237", "_blank");
 }
 contactMe[1].onclick = function () {
-    window.open("https://wa.me/01004104024", "_blank");
+    window.open("https://wa.me/+201004104024", "_blank");
 }
 contactMe[2].onclick = function () {
     window.open("https://www.facebook.com/walid.bakr.3", "_blank");
