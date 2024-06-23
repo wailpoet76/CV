@@ -332,10 +332,10 @@ const timelineCnt = document.querySelector(".timeline .contents")
 const timelineCntLeft = document.querySelectorAll(".timeline .contents .item.left")
 window.addEventListener("scroll", () => {
     const hider = document.documentElement.querySelector(".container .timeline .contents .hider");
-    if (window.scrollY >= 3700) {
+    if (window.scrollY >= 2200) {
         hider.classList.add("active");
     }
-    if (window.scrollY < 3400) {
+    if (window.scrollY < 2200) {
         hider.classList.remove("active");
     }
 })
