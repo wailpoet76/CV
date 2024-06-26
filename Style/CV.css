@@ -520,7 +520,13 @@ div.Header {
   min-height: 100vh;
   background-image: url("../imgs/scroll/1.jpg");
   background-size: cover;
+  transition: 4s;
+  -webkit-transition: 4s;
+  -moz-transition: 4s;
+  -ms-transition: 4s;
+  -o-transition: 4s;
 }
+
 
 div.intro_text {
   position: absolute;

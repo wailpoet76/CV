@@ -113,7 +113,7 @@ toggleCheck.addEventListener("click", function () {
 randImg[0].addEventListener('click', function () {
     randImg[0].dataset.background = 'show';
     randImg[1].dataset.background = 'hide';
-    timer = setInterval(changeImage, 5000);
+    timer = setInterval(changeImage, 6000);
     localStorage.setItem("imageCond", true);
 });
 randImg[1].addEventListener('click', function () {
@@ -361,7 +361,7 @@ function resize() {
 //************************************* */
 const cv = document.querySelector(".cv")
 cv.onclick = function () {
-    window.open("../Files/MyC.V. as Developer - 2024.pdf", "_blank");
+    window.open("./Files/MyC.V. as Developer - 2024.pdf", "_blank");
 }
 
 
@@ -411,5 +411,4 @@ function paintPage() {
 function changeImage() {
     let file = Math.ceil(Math.random(1) * 10);
     image.style.backgroundImage = `url(./imgs/scroll/${file}.jpg)`
-
 }
